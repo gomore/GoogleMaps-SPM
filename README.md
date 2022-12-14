@@ -15,7 +15,7 @@ This project rebuilds Google's beta XCFrameworks so they can be added as a depen
 
 ```swift
 dependencies: [
-  .package(url: "https://github.com/darrarski/GoogleMaps-SP.git", .upToNextMinor(from: "7.1.0"))
+  .package(url: "https://github.com/gomore/GoogleMaps-SPM.git", from: "7.2.0")
 ]
 ```
 
@@ -33,6 +33,6 @@ dependencies: [
 
 The **Google Maps iOS SDK** and **Google Places iOS SDK** libraries are the property of Google and are subject to *Google's Terms of Service*. See [LICENSE.google](LICENSE.google) for details.
 
-This repo is a fork of [YAtechnologies/GoogleMaps-SP](https://github.com/YAtechnologies/GoogleMaps-SP) with some tweeks that adds support for ARM64 simulator.
+This repo is a fork of [darrarski/GoogleMaps-SP](https://github.com/darrarski/GoogleMaps-SP) with some tweeks that adds support for ARM64 simulator.
 
 This repo is provided as is, without any guarantee. It can (hopefully) become obsolete once Google fixes their SDKs.
