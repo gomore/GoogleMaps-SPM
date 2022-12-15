@@ -26,7 +26,7 @@ dependencies: [
   - [GoogleMaps SDK](https://developers.google.com/maps/documentation/ios-sdk/config#install-the-xcframework)
   - [GooglePlaces SDK](https://developers.google.com/maps/documentation/places/ios-sdk/config#install-the-xcframework)
 3. Unzip and put downloaded XCFrameworks inside `GoogleFrameworks` directory
-4. Run `make_xcframeworks.sh` script.
+4. Run `make_xcframeworks.sh -x` script.
 5. You can find your new XCFrameworks in `Build` directory.
 
 ## License & Copyright
