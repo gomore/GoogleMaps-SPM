@@ -78,7 +78,7 @@ function build_xcproject_project() {
 
 function help() {
   # Display help.
-  echo "Syntax: make_scframework [-x|h]"
+  echo "Syntax: make_xcframework [-x|h]"
   echo "options:"
   echo "x     Create an XCFramework by building the Xcode project."
   echo "h     Print this Help."
