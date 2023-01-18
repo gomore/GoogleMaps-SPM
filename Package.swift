@@ -28,18 +28,18 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "GoogleMaps",
-            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/7.2.0/GoogleMaps.xcframework.zip",
-            checksum: "959fbc3711d0f1f03d96a8e78a1e694795af5faeb440fde0bedf694ae8eaf344"
+            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/7.3.0/GoogleMaps.xcframework.zip",
+            checksum: "f93a4871de04a90708c3acbd7aad5127d4a7ea0966a90a5085baf28eafb4d731"
         ),
         .binaryTarget(
             name: "GoogleMapsBase",
-            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/7.2.0/GoogleMapsBase.xcframework.zip",
-            checksum: "2dcdeee41481bd7d91d90cf5ea467b21228e2b03559bfc7eb0421dc5dbb638f1"
+            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/7.3.0/GoogleMapsBase.xcframework.zip",
+            checksum: "3cd225cf69b8fd0ed1d71d961933da3565b1e66f7452f47be7cd5d33fdf0269f"
         ),
         .binaryTarget(
             name: "GoogleMapsCore",
-            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/7.2.0/GoogleMapsCore.xcframework.zip",
-            checksum: "3a36334a481f49d8d95ad2581b28da641e365f3171f3907fb7a902087d82f8b5"
+            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/7.3.0/GoogleMapsCore.xcframework.zip",
+            checksum: "3223afa3e93b6573a280d6c8ff2c7f4ed880bc8f7c75d3be8a9aa611a2284ce2"
         )
     ]
 )
