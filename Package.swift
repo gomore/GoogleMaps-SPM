@@ -29,17 +29,17 @@ let package = Package(
         .binaryTarget(
             name: "GoogleMaps",
             url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/8.0.0/GoogleMaps.xcframework.zip",
-            checksum: "a06947f68f7085799360aff0940d7ce069d81bcd67bd3aac2f57ef1887f7e63f"
+            checksum: "bf95c3605dc1a27cf95b1ca9d4f0e3c9e27df2764467edfadaf80d41c12201bf"
         ),
         .binaryTarget(
             name: "GoogleMapsBase",
             url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/8.0.0/GoogleMapsBase.xcframework.zip",
-            checksum: "fe796d58748c89b3bff42e0633561260d6a6ee0916305565ef9cfbb4354579ca"
+            checksum: "fd37243f5b1e260bbf7dbe2a27698fbf799860da1e52f3e21373ae6f429ad92a"
         ),
         .binaryTarget(
             name: "GoogleMapsCore",
             url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/8.0.0/GoogleMapsCore.xcframework.zip",
-            checksum: "e3c4807965a6105160a0ea163a50889bd60ba3686f05136bc6476c6bd44eac32"
+            checksum: "4fce1d60374422ca5e8ca7c4198eed98ca3d1081a85e1b4b75783e5224f43f56"
         )
     ]
 )
