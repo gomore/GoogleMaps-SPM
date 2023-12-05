@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "GoogleMaps",
+    defaultLocalization: "en",
     products: [
         .library(
             name: "GoogleMapsBase",
@@ -28,18 +29,18 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "GoogleMaps",
-            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/8.0.0/GoogleMaps.xcframework.zip",
-            checksum: "bf95c3605dc1a27cf95b1ca9d4f0e3c9e27df2764467edfadaf80d41c12201bf"
+            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/8.3.1/GoogleMaps.xcframework.zip",
+            checksum: "36f180556405a1ac6a934dd779fdfd280e19a73121eba45b32e4ee9f1e6370f2"
         ),
         .binaryTarget(
             name: "GoogleMapsBase",
-            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/8.0.0/GoogleMapsBase.xcframework.zip",
-            checksum: "fd37243f5b1e260bbf7dbe2a27698fbf799860da1e52f3e21373ae6f429ad92a"
+            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/8.3.1/GoogleMapsBase.xcframework.zip",
+            checksum: "5e0a2259f86e4d83e6ffa307dcab3593bccaf8dbc090cf1fac78ee593a892ef2"
         ),
         .binaryTarget(
             name: "GoogleMapsCore",
-            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/8.0.0/GoogleMapsCore.xcframework.zip",
-            checksum: "4fce1d60374422ca5e8ca7c4198eed98ca3d1081a85e1b4b75783e5224f43f56"
+            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/8.3.1/GoogleMapsCore.xcframework.zip",
+            checksum: "3055ba0738bc1e596c1e3f33c37974cfbfa95c3877021b4f06126cd299990065"
         )
     ]
 )

@@ -43,9 +43,6 @@ function create_xcframework() {
 
   # Compress the XCFramework.
   zip -r -X "$framework_name.xcframework.zip" "$framework_name.xcframework/"
-
-  # Save the SHA-256 checksum.
-  shasum -a 256 "$framework_name.xcframework.zip" >> checksum
 }
 
 function prepare() {
@@ -53,6 +50,8 @@ function prepare() {
   if [ ! -d "$BUILD_DIRECTORY" ]; then
     mkdir $BUILD_DIRECTORY
   fi
+
+  cd $BUILD_DIRECTORY
 }
 
 function cleanup() {
@@ -60,18 +59,23 @@ function cleanup() {
   rm -r *.xcarchive
 }
 
-function print_completion_message() {
-  echo $'\n** XCFRAMEWORK CREATION FINISHED **\n'
+function generate_checksum() {
+  prepare
+
+  # Save the SHA-256 checksum.
+  shasum -a 256 "GoogleMaps.xcframework.zip" > checksum
+  shasum -a 256 "GoogleMapsBase.xcframework.zip" >> checksum
+  shasum -a 256 "GoogleMapsCore.xcframework.zip" >> checksum
 }
 
 function build_xcproject_project() {
   prepare
 
-  cd $BUILD_DIRECTORY
-
   create_xcframework "GoogleMaps" "GoogleMaps"
   create_xcframework "GoogleMaps" "GoogleMapsBase"
   create_xcframework "GoogleMaps" "GoogleMapsCore"
+
+  generate_checksum
 
   cleanup
 }
@@ -81,18 +85,23 @@ function help() {
   echo "Syntax: make_xcframework [-x|h]"
   echo "options:"
   echo "x     Create an XCFramework by building the Xcode project."
+  echo "c     Generate checksum."
   echo "h     Print this Help."
   echo
 }
 
-while getopts ":hxg" flag; do
+while getopts ":hxcg" flag; do
    case "${flag}" in
       h) # display Help
         help
         exit;;
       x) # Build Xcode project
         build_xcproject_project
-        print_completion_message
+        echo $'\n** XCFRAMEWORK CREATION FINISHED **\n'
+        exit;;
+      c) # Generate checksum for zips
+        generate_checksum
+        echo $'\n** CHECKSUM CREATION FINISHED **\n'
         exit;;
      \?) # Invalid option
         echo "Error: Invalid option"
