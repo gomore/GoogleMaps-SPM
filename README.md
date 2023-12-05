@@ -43,8 +43,7 @@ Here is an example of an SP configuration where you added the bundle to the root
     dependencies: [
         .product(name: "GoogleMaps", package: "GoogleMaps-SPM"),
         .product(name: "GoogleMapsBase", package: "GoogleMaps-SPM"),
-        .product(name: "GoogleMapsCore", package: "GoogleMaps-SPM"),
-        .product(name: "GoogleMapsResources", package: "GoogleMaps-SPM")
+        .product(name: "GoogleMapsCore", package: "GoogleMaps-SPM")
     ],
     resources: [
         .copy("GoogleMaps.bundle")
