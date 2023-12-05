@@ -33,7 +33,7 @@ dependencies: [
 
 ## Setup
 
-For now, the `GoogleMaps.bundle` must be added to your project. You can add it to any SP and use copy.
+For now, the [`GoogleMaps.bundle`](https://github.com/gomore/GoogleMaps-SPM/releases/download/8.3.1/GoogleMaps.bundle.zip) must be added to your project. You can add it to any SP and use copy.
 
 Here is an example of an SP configuration where you added the bundle to the root.
 
